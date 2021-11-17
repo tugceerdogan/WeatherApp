@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SecondFragment">
+
+
+    <TextView
+        android:id="@+id/txt_cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#47525E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_weatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@android:drawable/btn_star_big_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cityName" />
+
+    <TextView
+        android:id="@+id/txt_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="5°"
+        android:textSize="55sp"
+        android:textColor="#47525E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_weatherIcon" />
+
+    <LinearLayout
+        android:id="@+id/relative_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_temperature"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_firstDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_firstIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginVertical="10dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/txt_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt2_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/relative_first"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_secondDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_secondIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginVertical="10dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/txt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt2_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/relative_second"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_thirdDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_thirdIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginVertical="10dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/txt_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt2_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relative_forth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/relative_third"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_forthDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_forthIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginVertical="10dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/txt_forth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt2_forth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relative_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/relative_forth"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_fifthDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_fifthIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginVertical="10dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/txt_fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt2_fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relative_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/relative_fifth"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_sixthDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_sixthIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginVertical="10dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/txt_sixth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt2_sixth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1°"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
