@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.example.weatherapp.databinding.SecondFragmentBinding
 import com.example.weatherapp.viewmodel.SecondViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SecondFragment : Fragment() {
 
     private lateinit var _binding: SecondFragmentBinding
